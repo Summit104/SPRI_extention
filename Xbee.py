@@ -36,10 +36,10 @@ while True:
                 if (time_int >= 10):  #if the heading angle is over or equal to 360, or less than 0 then a pulse will be sent out
                     broadcast = '1'
                     Xbee.write(broadcast.encode())
-                    time_base = time_base + cycle_time
+                    time_base = time.time()
 
                # if (time_int <= 0)
-                #    broadcast = '1'
+                 #    broadcast = '1'
                  #   Xbee.write(broadcast.encode())
                  #   angle = angle + 360
 
