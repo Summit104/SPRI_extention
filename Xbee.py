@@ -8,9 +8,6 @@ Xbee = serial.Serial('/dev/ttyUSB0', 115200)
 
 time_int = 0
 
-def printit():          #print out the angle every 5 seconds
-        threading.Timer(5.0, printit).start()
-        print ("{0:.3f}".format(angle))
 
 #Body
 cycle_time = 10 #length of osc duration
@@ -47,7 +44,7 @@ while True:
                     
                 if (time.time() - timer_baseval >= 1):
                     timer_baseval = timer_baseval + 1
-                    print ("{0:.3f}, {0:.1f}".format(time_int, initial_heading))
+                    print ("{0:.3f}, {0:.1f}".format(time_int, initial_heading, Xbee.inWaiting()))
                 
 
                 if Xbee.inWaiting() > 0:
