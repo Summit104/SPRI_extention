@@ -21,7 +21,7 @@ while True:
 		if (initial_heading >= 360):
 		    initial_heading= initial_heading - 360
 
-		if (initial_heading <= 0):
+		if (initial_heading < 0):
                     initial_heading = 360 + initial_heading 
 
 
