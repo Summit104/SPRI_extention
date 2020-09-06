@@ -21,7 +21,7 @@ timer_baseval = time.time()
 
 while True:
         try:
-		if (initial_heading >= 360)
+		if (initial_heading >= 360):
 		    initial_heading= initial_heading - 360
 
 		if (initial_heading <= 0):
