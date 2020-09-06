@@ -44,7 +44,7 @@ while True:
                     
                 if (time.time() - timer_baseval >= 1):
                     timer_baseval = timer_baseval + 1
-                    print ("{0:.3f}, {0:.1f}".format(time_int, initial_heading, Xbee.inWaiting()))
+                    print ("{0:.3f}, {0:.1f}, {0:.1f}".format(time_int, initial_heading, Xbee.inWaiting()))
                 
 
                 if Xbee.inWaiting() > 0:
